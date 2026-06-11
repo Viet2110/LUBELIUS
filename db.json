@@ -1,0 +1,303 @@
+{
+  "tables": [
+    {
+      "id": "1",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "2",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "3",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "4",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "5",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "6",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "7",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "8",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "9",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "10",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "11",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    },
+    {
+      "id": "12",
+      "customerName": "",
+      "quantity": 0,
+      "status": true
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "name": "Seafood Pizza tt",
+      "image": "https://res.cloudinary.com/danhe48za/image/upload/v1780474995/tfkvdlmd7l8etvlumeyi.png",
+      "price": "18"
+    },
+    {
+      "id": "3",
+      "name": "Spicy Fried Chicken",
+      "image": "../image/Spicy-Fried-Chicken.png",
+      "price": 85
+    },
+    {
+      "id": "4",
+      "name": "Spaghetti Bolognese",
+      "image": "../image/Spaghetti-Bolognese.png",
+      "price": 129
+    },
+    {
+      "id": "5",
+      "name": "Grilled Chicken Rice",
+      "image": "../image/Grilled-Chicken-Rice.png",
+      "price": 79
+    },
+    {
+      "id": "6",
+      "name": "BBQ Pork Sandwich",
+      "image": "../image/BBQ-Pork-Sandwich.png",
+      "price": 35
+    },
+    {
+      "id": "7",
+      "name": "Beef Pho",
+      "image": "../image/Beef-Pho.png",
+      "price": 65
+    },
+    {
+      "id": "8",
+      "name": "Hanoi Grilled Pork Noodles",
+      "image": "../image/Hanoi-Grilled-Pork-Noodles.png",
+      "price": 70
+    },
+    {
+      "id": "9",
+      "name": "Salmon Sushi",
+      "image": "../image/Salmon-Sushi.png",
+      "price": 159
+    },
+    {
+      "id": "10",
+      "name": "Thai Seafood Hotpot",
+      "image": "../image/Thai-Seafood-Hotpot.png",
+      "price": 299
+    },
+    {
+      "id": "11",
+      "name": "Bubble Milk Tea",
+      "image": "../image/Bubble-Milk-Tea.png",
+      "price": 45
+    },
+    {
+      "id": "12",
+      "name": "Strawberry Ice Cream",
+      "image": "../image//Strawberry.png",
+      "price": 39
+    }
+  ],
+  "orders": [],
+  "paybill": [
+    {
+      "idTable": "5",
+      "bill": [
+        {
+          "idFood": "3",
+          "quantity": "1"
+        }
+      ],
+      "total": "85",
+      "creatAt": "2026-06-08T08:05:50.291Z",
+      "id": 1
+    },
+    {
+      "idTable": "2",
+      "bill": [
+        {
+          "idFood": "3",
+          "quantity": "2"
+        },
+        {
+          "idFood": "6",
+          "quantity": "2"
+        },
+        {
+          "idFood": "7",
+          "quantity": "2"
+        }
+      ],
+      "total": "370",
+      "creatAt": "2026-06-11T09:04:38.444Z",
+      "id": 2
+    },
+    {
+      "idTable": "1",
+      "bill": [
+        {
+          "idFood": "1",
+          "quantity": "2"
+        },
+        {
+          "idFood": "6",
+          "quantity": "2"
+        },
+        {
+          "idFood": "7",
+          "quantity": "2"
+        }
+      ],
+      "total": "236",
+      "creatAt": "2026-06-11T10:06:21.340Z",
+      "id": 3
+    },
+    {
+      "idTable": "2",
+      "bill": [
+        {
+          "idFood": "1",
+          "quantity": "1"
+        },
+        {
+          "idFood": "3",
+          "quantity": "3"
+        }
+      ],
+      "total": "273",
+      "creatAt": "2026-06-11T10:06:59.647Z",
+      "id": 4
+    },
+    {
+      "idTable": "7",
+      "bill": [
+        {
+          "idFood": "7",
+          "quantity": "2"
+        },
+        {
+          "idFood": "9",
+          "quantity": "1"
+        },
+        {
+          "idFood": "11",
+          "quantity": "2"
+        }
+      ],
+      "total": "379",
+      "creatAt": "2026-06-11T10:07:15.735Z",
+      "id": 5
+    },
+    {
+      "idTable": "9",
+      "bill": [
+        {
+          "idFood": "1",
+          "quantity": "2"
+        },
+        {
+          "idFood": "5",
+          "quantity": "1"
+        },
+        {
+          "idFood": "6",
+          "quantity": "2"
+        },
+        {
+          "idFood": "9",
+          "quantity": "2"
+        },
+        {
+          "idFood": "10",
+          "quantity": "2"
+        }
+      ],
+      "total": "1101",
+      "creatAt": "2026-06-11T10:07:32.023Z",
+      "id": 6
+    },
+    {
+      "idTable": "11",
+      "bill": [
+        {
+          "idFood": "1",
+          "quantity": "1"
+        },
+        {
+          "idFood": "3",
+          "quantity": "1"
+        },
+        {
+          "idFood": "4",
+          "quantity": "1"
+        },
+        {
+          "idFood": "5",
+          "quantity": "2"
+        },
+        {
+          "idFood": "6",
+          "quantity": "2"
+        },
+        {
+          "idFood": "10",
+          "quantity": 8
+        },
+        {
+          "idFood": "12",
+          "quantity": "3"
+        }
+      ],
+      "total": "2969",
+      "creatAt": "2026-06-11T10:08:05.265Z",
+      "id": 7
+    }
+  ],
+  "profile": {
+    "email": "viettuanthai@gmail.com",
+    "password": "thaituanviet123"
+  }
+}

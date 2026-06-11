@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/7130503/pexels-photo-7130503.jpeg);
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 55%;
+
+    .left {
+        background-color: white;
+        padding: 45px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        .in1,
+        .in2 {
+            outline: none;
+            background-color: rgb(224, 224, 224);
+        }
+
+        h6 {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        li {
+            background-color: white;
+
+            &:hover {
+                background-color: rgb(212, 212, 212);
+            }
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            width: 40%;
+            padding: 10px 0;
+            border: 0;
+            border-radius: 50px;
+            background-color: rgb(0, 166, 255);
+            color: white;
+            transition: all 0.5s ease-in;
+
+            &:hover {
+                background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+                transform: translateY(-5px) scale(1.2);
+            }
+        }
+    }
+
+    .right {
+        background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+        padding: 30px;
+        color: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        button {
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 10px 40px;
+            margin-top: 20px;
+            background-color: transparent;
+            color: white;
+            transition: all 0.5s ease-in;
+
+            &:hover {
+                background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                color: black;
+                transform: translateY(-5px) scale(1.1);
+            }
+        }
+    }
+}

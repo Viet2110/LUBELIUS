@@ -14,45 +14,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <div class="admin d-flex">
+    <div class="admin">
         <div class="left bg-danger">
-            <div class="muasam  p-3">
+            <div class="muasam p-3">
                 <h1 class="m-0 text-white element d-none">PINK STORE</h1>
                 <div class="logo element">
                     <img src="../image/logo.png" alt="">
                 </div>
                 <div class="muiten">
                     <i class="fa-solid fa-arrow-right-to-bracket element"></i>
-                     <i class="fa-solid fa-hand-point-left element d-none"></i>
+                    <i class="fa-solid fa-hand-point-left element d-none"></i>
                 </div>
             </div>
-            <div class="item d-flex align-items-center gap-3 p-3 text-white">
-                <i class="fa-solid fa-gauge"></i>
-                <h6 class="m-0 text-center element d-none">DASHBOARD</h6>
-            </div>
-            <div class="item d-flex align-items-center gap-3 p-3 text-white">
-                <i class="fa-regular fa-calendar-days"></i>
-                <h6 class="m-0 text-center element d-none">RESERVATION</h6>
-            </div>
-            <div class="item d-flex align-items-center gap-3 p-3 text-white">
-                <i class="fa-solid fa-utensils"></i>
-                <h6 class="m-0 text-center element d-none">ORDER FOOD</h6>
-            </div>
-            <div class="item d-flex align-items-center gap-3 p-3 text-white">
-                <i class="fa-solid fa-money-bill"></i>
-                <h6 class="m-0 text-center element d-none">BILLs</h6>
-            </div>
-            <div class="item d-flex align-items-center gap-3 p-3 text-white">
-                <i class="fa-solid fa-user"></i>
-                <h6 class="m-0 text-center element d-none">USER</h6>
-            </div>
-            <div class="cha">
-                <span></span>
-                <span></span><span></span><span></span>
-            </div>
+            <ul class="menu ps-0">
+                <div class="item d-flex align-items-center gap-3 p-3 text-white">
+                    <i class="fa-solid fa-gauge"></i>
+                    <h6 class="m-0 text-center element d-none">DASHBOARD</h6>
+                </div>
+                <div class="item d-flex align-items-center gap-3 p-3 text-white">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h6 class="m-0 text-center element d-none">RESERVATION</h6>
+                </div>
+                <div class="item d-flex align-items-center gap-3 p-3 text-white">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h6 class="m-0 text-center element d-none">ORDER FOOD</h6>
+                </div>
+                <div class="item d-flex align-items-center gap-3 p-3 text-white">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <h6 class="m-0 text-center element d-none">BILLs</h6>
+                </div>
+                <div class="item d-flex align-items-center gap-3 p-3 text-white">
+                    <i class="fa-solid fa-user"></i>
+                    <h6 class="m-0 text-center element d-none">USER</h6>
+                </div>
+            </ul>
         </div>
         <div class="right">
             <div class="fill d-flex justify-content-between align-items-center px-5">
@@ -61,18 +60,324 @@
                     <li><i class="fa-solid fa-bell"></i></li>
                     <li><i class="fa-solid fa-envelope"></i></li>
                 </ul>
-                <div class="box-img">
-                    <img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t39.30808-1/217711717_342304277371844_3450283913637789918_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=dktQElCzuoYQ7kNvwHxYotF&_nc_oc=AdphLaG9FGeEP6yTfO4kC3wBLUhLqj0LJ0d0nSCAw6V9v6tMvIJyndb4cKM5hxvLEruf_11gemVGXlicVRS2bU4a&_nc_zt=24&_nc_ht=scontent.fdad1-1.fna&_nc_gid=Em1z1fNnRqk5kDyph7GuHw&_nc_ss=7b2a8&oh=00_Af6yxFdCSU8CAcWBOTOmD-WWmNwrpUOHYACypLUSEEGriQ&oe=6A15EB42" alt="">
+                <div class="box-img ">
+                    <img src="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/482752zXj/anh-mo-ta.png"
+                        alt="">
                 </div>
             </div>
+            <div class="menuImg">
+                <div class="fileBox d-none">
+                    <div class="fbox p-2 rounded-3 mb-1 text-center">
+                        <i class="fa-solid display-5 fa-circle-user mt-4"></i>
+                        <h5 class="mb-0 mt-3">Việt</h5>
+                        <p class="mb-0">viettuanthai@gmail.com</p>
+                    </div>
+                    <ul id="logout" class="d-flex align-items-center gap-3 ps-0 ps-2">
+                        <i class="fa-solid fa-key"></i>
+                        <p class="mb-0">Log out</p>
+                    </ul>
+                </div>
+            </div>
+            <main>
+                <div class="container box py-5">
+                    <div class="restaurant d-flex justify-content-center align-items-center">
+                        <img src="../image/đồthị.jpg" alt="">
+                        <h1 class="mb-0 fw-bold">Restaurant Analytics Dasboard</h1>
+                    </div>
+                    <h5 class="text-center mt-2 mb-0">Phân tích doanh thu và hiệu suất nhà hàng</h5>
+                    <div class="row row-cols-lg-4 row row-cols-md-2 row-row-cols-1 g-4 mt-3">
+                        <div class="col">
+                            <div class="card border-4 border-success" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <li></i></li>
+                                    <i class="bg-success text-white d-inline fa-solid fa-chair p-2 rounded-3 fs-5"></i>
+                                    <p class="mb-0 mt-2 mb-2 ">Tổng số bàn</p>
+                                    <h3 class="mb-0 fw-bold">12</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card  border-4 border-primary" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <li></i></li>
+                                    <i
+                                        class="bg-primary text-white d-inline fa-solid fa-utensils p-2 rounded-3 fs-5"></i>
+                                    <p class="mb-0 mt-2 mb-2 ">Bàn sẵn sàng tiếp khách</p>
+                                    <h3 class="mb-0 fw-bold">8</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card  border-4 border-warning" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <li></i></li>
+                                    <i
+                                        class="bg-warning text-white d-inline fa-solid fa-clipboard p-2 rounded-3 fs-5"></i>
+                                    <p class="mb-0 mt-2 mb-2 ">Đơn chưa thanh toán</p>
+                                    <h3 class="mb-0 fw-bold">3</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card  border-4 border-danger" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <li></i></li>
+                                    <i class="bg-danger text-white d-inline fa-solid fa-coins p-2 rounded-3 fs-5"></i>
+                                    <p class="mb-0 mt-2 mb-2 ">Doanh thu hôm nay</p>
+                                    <h3 class="mb-0 fw-bold">0 VND</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <h4>Tổng doanh thu</h4>
+                                    <p class="mb-0 mt-2 mb-2 fs-3 fw-bold">2,390K</p>
+                                    <p class="mb-0">VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <h4>Số đơn hàng</h4>
+                                    <p class="mb-0 mt-2 mb-2 fs-3 fw-bold">7</p>
+                                    <p class="mb-0">đơn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <h4>Món ăn phổ biến</h4>
+                                    <p class="mb-0 mt-2 mb-2 fs-3 fw-bold">Fried Rice</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem; height: 9rem;">
+                                <div class="card-body text-center ">
+                                    <h4>Khách hàng thường <br> xuyên</h4>
+                                    <p class="mb-0 mt-2 mb-2 fs-4 fw-bold">tom_nguyen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-md-3 row row-cols-1 g-3 mt-2">
+                        <div class="col">
+                            <h6 class="text-center fw-bold">Thống kê số lượng người hiện tại mỗi bàn</h6>
+                            <div class="barchart">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="text-center fw-bold">Thống kê doanh thu mỗi bàn</h6>
+                            <div class="linechart">
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="container box py-5">
+                    <div class="row row-cols-xl-4 row row-cols-md-2 row row-cols-1 g-4 tables">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="container">
+                        <div class="datmon d-flex gap-4 py-5">
+                            <div class="tum d-flex ">
+                                <div
+                                    class="border rounded-4 py-2 px-3 d-flex justify-content-center align-items-center gap-5 ">
+                                    <li>
+                                        <i class="fa-solid fa-utensils"></i>
+                                        <select id="choose" class="border-0">
+                                            <option selected disabled value="">Choose a table</option>
+                                        </select>
+                                    </li>
+                                    <button id="order"
+                                        class="goi d-flex align-items-center gap-2 px-5 py-3 border border-0 rounded-5 text-white">
+                                        <li><i class="fa-solid fa-cart-shopping d-flex"></i></li>
+                                        <p class="mb-0">Order</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tim">
+                                <input type="text" placeholder="Search">
+                                <button>Submit Now</button>
+                            </div>
+                            <div class="tom d-flex flex-column justify-content-center">
+                                <button data-bs-toggle="modal" data-bs-target="#addfood"
+                                    class="d-flex justify-content-center align-items-center gap-3 py-2 px-3 border-0 rounded-5">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h5 class="mb-0">Add Food</h5>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chonmon">
+                            <div class="row row-cols-lg-4 row row-cols-md-2 row row-cols-1 g-4 pb-4 foods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container box py-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <li class="fs-2"><i class="fa-solid fa-receipt"></i></li>
+                        <h2 class="mb-0">Hóa đơn đã thanh toán</h2>
+                    </div>
+                    <div class="row row-cols-lg-2 row row-cols-1 g-3 showpayBill">
+                    </div>
+                </div>
+                <div class="container box py-5">
+
+                    <body>
+                        <form action="">
+                            <div class="left1 d-flex flex-column align-items-center p-5 text-white">
+                                <div class="bIMG">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/482752zXj/anh-mo-ta.png"
+                                        alt="">
+                                </div>
+                                <div class="my-2">
+                                    <h2 class="mb-0">john_doe</h2>
+                                    <p class="mb-0">Member</p>
+                                </div>
+                                <button class="d-flex align-items-center gap-2 py-2 px-3">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <p class="mb-0">Edit</p>
+                                </button>
+                            </div>
+                            <div class="right1">
+                            </div>
+                        </form>
+                    </body>
+                </div>
+            </main>
 
         </div>
     </div>
+    <!-- Modal Booking -->
+    <div class="modal fade" id="booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex gap-2">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Booking</h5>
+                    <span class="number1">1</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="customername" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="quantity" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="dat" class="btn btn-primary">Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Add Food -->
+    <div class="modal fade" id="addfood" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-3 bg-light">
+                <div class="modal-header head">
+                    <h5 class="modal-title text-white" id="add">ADD FOOD</h5>
+                    <button type="button" class="btn-close xmark" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-white ">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">NAME</label>
+                        <input type="email" placeholder="Enter food name" class="form-control" id="foodname"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">PRICE</label>
+                        <input type="number" placeholder="Enter price" class="form-control" id="price"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">IMAGE</label>
+                        <input type="file" class="form-control" id="imgfile" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3 w-75 h-75 m-auto">
+                        <img id="imgage" class="" src="../image/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="upload" type="button" class="btn btn-primary up">UPLOAD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal DELETE -->
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Delete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="text-center">Bạn có muốn xác nhận xóa sản phảm này hay không ?</p>
+                    <div class="number2 m-auto">1</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button id="dlete" type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal CART -->
+    <div class="modal fade" id="card" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex gap-2">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Card</h5>
+                    <div id="banmay" class="number3">1</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Img</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="icard">
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="thanhtoan" type="button" class="btn btn-primary">Pay Bill</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add this script tag to your HTML file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="../js/project.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/cloudinaryConfig.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/getFileBill.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/getTables.js"></script>
+    <script src="../js/getFood.js"></script>
 </body>
 
 </html>
