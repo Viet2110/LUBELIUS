@@ -47,24 +47,24 @@ async function showlineChart() {
 
     const data = await getAll(URL_PAYBILL);
     const dataShow = [];
-     data.forEach(element => {
+    data.forEach(element => {
         const index = dataShow.findIndex(e => e.id == element.idTable);
-        if(index == -1){
-             dataShow.push({ id : element.idTable , total : element.total})
-        }else {
+        if (index == -1) {
+            dataShow.push({ id: element.idTable, total: element.total })
+        } else {
             dataShow[index].total = parseFloat(dataShow[index].total) + parseFloat(element.total)
         }
-     });
+    });
     const line = document.createElement("canvas");
     line.height = 300;
     l.appendChild(line)
     const config = {
         type: 'line',
         data: {
-            labels: dataShow.sort((a,b) => a.id - b.id).map(e => `Table ${e.id}`),
+            labels: dataShow.sort((a, b) => a.id - b.id).map(e => `Table ${e.id}`),
             datasets: [{
                 label: 'My First Dataset',
-                data: dataShow.sort((a,b) => a.id - b.id).map(e => e.total),
+                data: dataShow.sort((a, b) => a.id - b.id).map(e => e.total),
                 fill: false,
                 borderColor: 'rgb(75, 192, 192)',
                 tension: 0.1
@@ -73,6 +73,41 @@ async function showlineChart() {
     };
     new Chart(line, config);
 }
+async function showdouGhnut() {
+    const d = document.querySelector(".doughnut");
+    const data = await getAll(URL_PAYBILL);
+    const doughnut = document.createElement("canvas");
+    doughnut.height = 300;
+    d.appendChild(doughnut)
 
+    const dataShowdoughnut = [];
+    data.forEach(item => {
+        const index = dataShowdoughnut.findIndex(e => e.id == item.idTable);
+        if (index == -1) {
+            dataShowdoughnut.push({id: item.idTable, total: parseFloat(item.total)})
+        } else {
+            dataShowdoughnut[index].total = parseFloat(item.total);
+        }
+    });
+    dataShowdoughnut.sort((a, b) => a.id - b.id);
+    const config = {
+        type: 'doughnut',
+        data: {
+            labels: dataShowdoughnut.sort((a, b) => a.id - b.id).map(e => `Table ${e.id}`),
+            datasets: [{
+                label: 'My First Dataset',
+                data: dataShowdoughnut.sort((a, b) => a.id - b.id).map(e => e.total),
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
+                ],
+                hoverOffset: 4
+            }]
+        }
+    };
+    new Chart(doughnut, config);
+}
+showdouGhnut();
 showlineChart()
 showbartChart();
